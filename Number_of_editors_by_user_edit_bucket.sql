@@ -16,7 +16,7 @@ WITH revision_buckets AS (
         GROUP BY rev_actor -- Grouping by actor to count their revisions
     )
 
-SELECT 
+SELECT
     bucket,
     COUNT(*) AS number_of_editors   -- Counting the number of actors in each bucket
 FROM revision_buckets
