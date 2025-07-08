@@ -1,5 +1,5 @@
 -- Counting the number of actors in different contribution buckets
-WITH revision_buckets AS (  --A CTE using WITH
+WITH revision_buckets AS (
     SELECT COUNT(*), bucket 
     FROM (
         -- Subquery: Categorizing actors based on the number of revisions they made
